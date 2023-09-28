@@ -1,72 +1,521 @@
-<!--Este es un comentario de HTML-->
-<!--Los comentarios no se renderizan en el navegador, son únicamente para quienes inspeccionan el código-->
 
-
-<!--Declaración de tipo de documento-->
-    <!DOCTYPE html>
-
-<!--Declaración de idioma de la página-->
-    <html lang="es">
-
-<!--Etiqueta <head> con información para el navegador, los usuarios no van a ver esta información publicada.
-    Es únicamente para funcionamiento del navegador-->
-<head>
-
-    <!--Esta es la "metadata", que permite insertar información para los buscadores y el navegador-->
-
-        <!--Set de caracteres utilizados. UTF-8 incluye ñ y acentos, es el más usado-->
-            <meta charset="UTF-8">
-        <!--Declaración de vista de compatibilidad-->
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--Seteo de la pantalla para que la escala sea 1/1-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Acá va el título de la página, que aparece en la pestaña-->
-            <title>Plantilla para modificar de HTML y CSS</title>
-        <!--Declaración de estilos en CSS-->
-        <link rel="stylesheet" href="estilos.css">
-        <!--Declaración de favicon (Icono de Favoritos)-->
-        <link  rel="icon"   href="media/logo_B.png" type="image/png" />
-        <!--Declaración de información de la página-->
-        <meta name="description" content="Esta es la descripción que aparecerá al buscar o encontrar la página en un navegador o buscador">
-</head>
-
-<!--Etiqueta <body> que incluye todo el contenido de la página.
-    La mayoría de lo escrito acá adentro se refleja en la pantalla que verá el usuario.-->
-<body>
-    <!--Barra de navegación con links-->
-    <!--Este es un elemento de navegación (nav) que debe ser único por página HTML. Tiene una clase "row"-->
-    <nav class="row">
-        <!--Este es un link (a) que lleva hacia otra página (href)-->
-        <a href="#">Inicio</a>
-        <a href="#">Entregas</a>
-        <!--Esta es una división con id único "logo" que contiene la imagen del logo-->
-        <div id="logo"><img src="media/logo_B.png" alt="Esta es la descripción del logo por si no carga correctamente"></div>
-        <a href="#">TP 2</a>
-        <a href="#">Contacto</a>
-    </nav>
-
-    <!--Banner con información dentro-->
-    <!-- Esta es una división o contenedor de página (div) con las clases "banner" y "colb"-->
-    <div class="banner colb">
-        <!--Esta es una división o contenedor de página con clase "banner_info"-->
-        <div class="banner_info">
-            <div class="colores">
-                <!--Esta división tiene un id único "color#" que debe ser único por documento html-->
-                <div id="color1" class="color"><img class="icon" src="media/icon1.png" alt="Esta es la descripción del icono por si no carga correctamente"></div>
-                <div id="color2" class="color"><img class="icon" src="media/icon2.png" alt="Esta es la descripción del icono por si no carga correctamente"></div>
-                <div id="color3" class="color"><img class="icon" src="media/icon3.png" alt="Esta es la descripción del icono por si no carga correctamente"></div>
-                <div id="color4" class="color"><img class="icon" src="media/icon4.png" alt="Esta es la descripción del icono por si no carga correctamente"></div>
-            </div>
-            <!--Este es un título de clase 1 (El más importante)-->
-            <h1>Soy Giuliana Rocio Donghi
-            </h1>
-            <!--Este es un párrafo de texto-->
-            <a href="#" class="btn2"> <p>Lo lamento todavia no empece con el TP</p></a>
-            <a href="#" class="btn">Hare lo posible para prensentar algun boceto</a>
+<!-- Page Title--><!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300i,400,400i,700%7CMontserrat:400,500,600,700%7CPlayfair+Display:400,700,700i%7COswald:400,700,700i">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
         </div>
+        <p>Loading...</p>
+      </div>
     </div>
+    <div class="page">
+      <!-- Banner 1-->
+      <!-- Page Header-->
+      <header class="section page-header" >
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic rd-navbar-classic-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/LOGO.svg" alt="" width="196" height="58"/><img class="brand-logo-light" src="images/logo-default-392x116.png" alt="" width="196" height="58"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">INICIO</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">SUSCRIPCIONES</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">NOSOTROS</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">CONTACTOS</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+       <!-- Swiper-->
+      <section class="section swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-slide-bg="images/slide-1-1920x720.jpg">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-10 col-lg-5 col-xl-5" >
+					   <h1>&nbsp;</h1>
+                    <h1 class="heading-decorate" data-caption-animate="fadeInUp" data-caption-delay="100"><span class="text-primary titulo768">mezcla, innnova y saborea</span>
+                    </h1>
+                   
+                    <p class="big text-gray-800 color3" data-caption-animate="fadeInUp" data-caption-delay="250">Si eres un entusiasta de los tragos premium y deseas impresionar a tus seres queridos  has llegado al lugar correcto.</p><a class="button button-default-outline" href="#suscripcion1" data-caption-animate="fadeInUp" data-caption-delay="450">VER MÁS</a>
+                  </div>
+			      <div class="col-sm-10 col-lg-7 col-xl-7">
+                   <img src="images/Group 38.png" alt="" align="right"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+      </section>
+      <section class="section section-lg white">
+        <div class="container">
+          <div class="row row-50 align-items-lg-center justify-content-xl-between">
+            <div class="col-lg-6">
+              <div>
+                <div ><img src="images/Group 39.png" alt=""/>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-5">
+              <h2 class="heading-decorate color1">Descubrí el Arte de la Cocktelería de Autor
+              </h2>
+              <p class="big text-gray-800">¡Sorprendé con tragos premium y experiencias inolvidables, guiados por el renombrado bartender Pablo Zitarosa. Únete a nuestras exclusivas suscripciones y sumérgete en la sofisticada mixología de autor.</p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg bg-default text-center white">
+		  
+        <div class="container color2">
+			        <div class="divider-lg"></div>
+          <h2>Tres simples pasos</h2>
+  
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+             <p>Recibirás una caja llena de sorpresas y elementos esenciales <br>
+				para convertirte en un maestro de la coctelería.</p>
+            </div>
+          </div>
+			<div class="col-12">
+              <!-- Owl Carousel-->
+              <div class="owl-carousel carousel-creative" data-items="1" data-lg-items="3" data-dots="true" data-nav="false" data-stage-padding="15px" data-loop="false" data-margin="10px" data-mouse-drag="false" padding-left= "10px">
+                <div class="team-minimal team-minimal-with-shadow linea">
+                  <figure><img src="images/img3.png" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption">
+                    <h4 class="team-title">Elegí</h4>
+                    <p>Seleccioná una de <br>
+					nuestras cajas </p>
+                  </div>
+                </div>
+				 
+                <div class="team-minimal team-minimal-with-shadow">
+                  <figure><img src="images/img1.png" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption">
+                    <h4 class="team-title">Pagá</h4>
+                    <p>Elegí la mejor forma de<br>
+					pago que tenemos para vos</p>
+                  </div>
+                </div>
+                <div class="team-minimal team-minimal-with-shadow linea">
+                  <figure><img src="images/img2.png" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption">
+                    <h4 class="team-title">disfrutá</h4>
+                    <p>Obtendrás tu caja <br>
+						en la puerta de tu casa</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+			 </div> 
+      </section>
+			   
+		<section class="section section-lg white">
+        <div class="container">
+			
+          <div class="row row-50 align-items-lg-center justify-content-xl-between">
+            <div class="col-lg-6">
+              <div>
+				  <h2 class="heading-decorate color1">que te espera en cada caja
+                </h2>
+				  <table width="500" border="0" >
+  <tbody>
+    <tr class="tabla">
+      <td> <img src="images/Group 18.svg" alt="" width="24px"/></td>
+      <td class="big text-gray-800" >Ingredientes premium</td>
+    </tr>
+    <tr class="tabla">
+      <td> <img src="images/Group 18.svg" alt="" width="24px"/></td>
+      <td class="big text-gray-800" >Recetas top</td>
+    </tr>
+	     <tr class="tabla">
+      <td> <img src="images/Group 18.svg" alt="" width="24px"/></td>
+      <td class="big text-gray-800" >Utensilios de élite</td>
+    </tr>
+	     <tr class="tabla">
+      <td> <img src="images/Group 18.svg" alt="" width="24px"/></td>
+      <td class="big text-gray-800" >Sorpresas mensuales</td>
+    </tr>
+	   <tr class="tabla">
+      <td> <img src="images/Group 18.svg" alt="" width="24px"/></td>
+      <td class="big text-gray-800" >Acceso a contenido exclusivo</td>
+    </tr>  
+			        </tbody>
+			    </table>
+          
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-5">
+             <div ><img src="images/Group 40.png" alt=""/>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>  
+		      <section class="section swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-slide-bg="images/slide-2-1920x720.jpg">
+            <div class="swiper-slide-caption section-md">
+           <div class="container color2 text-center">
+	          
+          <h2 id="suscripcion1">Eligí tu Aventura en el Bartender Club</h2>
+			<div class="col-12">
+              <!-- Owl Carousel-->
+              <div class="owl-carousel carousel-creative" data-items="1" data-lg-items="3" data-dots="true" data-nav="false" data-stage-padding="15px" data-loop="false" data-margin="10px" data-mouse-drag="false" padding-left= "10px">
+                <div class="team-minimal team-minimal-with-shadow suscripcion color1"><h2>BARRA BÁSICA</h2>
+                  <figure  class="figure"><img src="images/box3.png" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">3 meses</a></h4>
+                    <p>Bartools <br>
+                    Coctelera <br>
+                    3 recetas<br>
+                    <br>
+                    <br><br>
+                    </p>
+                    <a class="button button-default-outline" href="about.html" data-caption-animate="fadeInUp" data-caption-delay="450">$12000</a>
+                  </div>
+                </div>
+				 
+                               <div class="team-minimal team-minimal-with-shadow suscripcion color1"><h2>BARRA COCTELERA</h2>
+                  <figure class="figure"><img src="images/box2.png" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">6 meses</a></h4>
+                    <p>Bartools <br>
+                    Coctelera <br>
+                    Garnish <br>
+                    8 recetas <br>
+                    Un regalo sorpresa<br><br>
+                    </p>
+                    <a class="button button-default-outline" href="#" data-caption-animate="fadeInUp" data-caption-delay="450">$20.000</a>
+                  </div>
+                </div>
+                 <div class="team-minimal team-minimal-with-shadow suscripcion color1"><h2>BARRA profesional</h2>
+                  <figure class="figure"><img src="images/box1.png" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">12 meses</a></h4>
+                    <p>Bartools <br>
+                    Coctelera <br>
+                    Garnish <br>
+                    8 recetas <br>
+                    Un regalo sorpresa<br>
+					Contenidos premium<br>
+                    </p>
+                    <a class="button button-default-outline" href="#" data-caption-animate="fadeInUp" data-caption-delay="450">$30.000</a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+			 </div> 
+            </div>
+                </div>
+              </div>
+      </section>
+		
+      <section class="section swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-slide-bg="images/slide-3-1920x720.jpg">
+            <div class="swiper-slide-caption section-md">
+           <div class="container">
+	          
+           <div class="row row-50">
+            <div class="col-lg-6">
+              <div class="block-xs">
+                <h2 class="heading-decorate color2">Experiencias Memorables <br>
+					a tu Alcance</h2>
+                <p class="color2"> No solo te ofrecemos conocimientos y habilidades, sino también la oportunidad de explorar sabores únicos y vivir experiencias memorables. No tomes solo nuestra palabra; escucha lo que tienen que decir nuestros miembros satisfechos</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- Owl Carousel-->
+              <div class="owl-carousel carousel-corporate" data-items="1" data-dots="true" data-nav="false" data-stage-padding="10px" data-loop="false" data-margin="25px" data-mouse-drag="false">
+                <div class="quote-corporate">
+                  <div class="quote-header color1">
+                    <h4>Luna Moreno</h4>
+                    <p class="big">@Lmoreno</p>
+                  </div>
+                  <div class="quote-body">
+                    <div class="quote-text color2">
+                      <p>"El Bartender Club es excepcional. Con Pablo Zitarosa, creé tragos premium que impresionan. Suscripciones exclusivas, una travesía emocionante en mixología de autor. ¡Lo recomiendo!"</p>
+                    </div>
+                    <svg class="quote-body-mark" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="66px" height="49px" viewbox="0 0 66 49" enable-background="new 0 0 66 49" xml:space="preserve">
+                      <g></g>
+                      <path d="M36.903,49v-3.098c9.203-5.315,14.885-12.055,17.042-20.222c-2.335,1.524-4.459,2.288-6.37,2.288						c-3.186,0-5.875-1.29-8.071-3.876c-2.194-2.583-3.293-5.74-3.293-9.479c0-4.133,1.443-7.605,4.327-10.407						C43.425,1.405,46.973,0,51.185,0c4.213,0,7.735,1.784,10.566,5.352C64.585,8.919,66,13.359,66,18.669						c0,7.482-2.85,14.183-8.549,20.112C51.751,44.706,44.902,48.112,36.903,49z M0.69,49v-3.098						c9.205-5.315,14.887-12.055,17.044-20.222c-2.335,1.524-4.478,2.288-6.423,2.288c-3.152,0-5.823-1.29-8.02-3.876						C1.096,21.51,0,18.353,0,14.614c0-4.133,1.434-7.605,4.301-10.407C7.168,1.405,10.709,0,14.92,0c4.247,0,7.778,1.784,10.592,5.352						c2.814,3.567,4.223,8.007,4.223,13.317c0,7.482-2.843,14.183-8.524,20.112C15.53,44.706,8.69,48.112,0.69,49z"></path>
+                    </svg>
+                  </div>
+                  <div class="quote-image"><img src="images/home-1-10-90x90.jpg" alt="" width="90" height="90"/>
+                  </div>
+                </div>
+                <div class="quote-corporate">
+                  <div class="quote-header color1">
+                    <h4>Matias Frick</h4>
+                    <p class="big">@matias.frick</p>
+                  </div>
+                  <div class="quote-body">
+                    <div class="quote-text color2">
+                      <p>"Si amas cócteles sofisticados, el Bartender Club es imperdible. Con Pablo Zitarosa, eleve mis habilidades en mixología. Aprendi a realizar tragos increibles. Una elección fantástica."</p>
+                    </div>
+                    <svg class="quote-body-mark" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="66px" height="49px" viewbox="0 0 66 49" enable-background="new 0 0 66 49" xml:space="preserve">
+                      <g></g>
+                      <path d="M36.903,49v-3.098c9.203-5.315,14.885-12.055,17.042-20.222c-2.335,1.524-4.459,2.288-6.37,2.288						c-3.186,0-5.875-1.29-8.071-3.876c-2.194-2.583-3.293-5.74-3.293-9.479c0-4.133,1.443-7.605,4.327-10.407						C43.425,1.405,46.973,0,51.185,0c4.213,0,7.735,1.784,10.566,5.352C64.585,8.919,66,13.359,66,18.669						c0,7.482-2.85,14.183-8.549,20.112C51.751,44.706,44.902,48.112,36.903,49z M0.69,49v-3.098						c9.205-5.315,14.887-12.055,17.044-20.222c-2.335,1.524-4.478,2.288-6.423,2.288c-3.152,0-5.823-1.29-8.02-3.876						C1.096,21.51,0,18.353,0,14.614c0-4.133,1.434-7.605,4.301-10.407C7.168,1.405,10.709,0,14.92,0c4.247,0,7.778,1.784,10.592,5.352						c2.814,3.567,4.223,8.007,4.223,13.317c0,7.482-2.843,14.183-8.524,20.112C15.53,44.706,8.69,48.112,0.69,49z"></path>
+                    </svg>
+                  </div>
+                  <div class="quote-image"><img src="images/home-1-11-90x90.jpg" alt="" width="90" height="90"/>
+                  </div>
+                </div>
+                <div class="quote-corporate">
+                  <div class="quote-header color1">
+                    <h4>Amanda Donatti</h4>
+                    <p class="big">@donatti.ami</p>
+                  </div>
+                  <div class="quote-body">
+                    <div class="quote-text color2">
+                      <p> "Unirme al Bartender Club fue una de mis mejores decisiones. Tragos premium sorprenden a mis invitados. La expertise de Pablo Zitarosa y suscripciones exclusivas son impresionantes."</p>
+                    </div>
+                    <svg class="quote-body-mark" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="66px" height="49px" viewbox="0 0 66 49" enable-background="new 0 0 66 49" xml:space="preserve">
+                      <g></g>
+                      <path d="M36.903,49v-3.098c9.203-5.315,14.885-12.055,17.042-20.222c-2.335,1.524-4.459,2.288-6.37,2.288						c-3.186,0-5.875-1.29-8.071-3.876c-2.194-2.583-3.293-5.74-3.293-9.479c0-4.133,1.443-7.605,4.327-10.407						C43.425,1.405,46.973,0,51.185,0c4.213,0,7.735,1.784,10.566,5.352C64.585,8.919,66,13.359,66,18.669						c0,7.482-2.85,14.183-8.549,20.112C51.751,44.706,44.902,48.112,36.903,49z M0.69,49v-3.098						c9.205-5.315,14.887-12.055,17.044-20.222c-2.335,1.524-4.478,2.288-6.423,2.288c-3.152,0-5.823-1.29-8.02-3.876						C1.096,21.51,0,18.353,0,14.614c0-4.133,1.434-7.605,4.301-10.407C7.168,1.405,10.709,0,14.92,0c4.247,0,7.778,1.784,10.592,5.352						c2.814,3.567,4.223,8.007,4.223,13.317c0,7.482-2.843,14.183-8.524,20.112C15.53,44.706,8.69,48.112,0.69,49z"></path>
+                    </svg>
+                  </div>
+                  <div class="quote-image"><img src="images/home-1-12-90x90.jpg" alt="" width="90" height="90"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+			 </div> 
+            </div>
+                </div>
+              </div>
+      </section>
+      
+		
+				<section class="section section-lg pablo">
+        <div class="container">
+			
+          <div class="row row-50 align-items-lg-center justify-content-xl-between">
+            <div class="col-lg-6">
+					<img src="images/Group 37.png" alt=""/>
+            </div>
+            <div class="col-lg-6 col-xl-5">
+             <div >
+				               <div>
+				  <h2 class="heading-decorate color2">Pablo Zitarosa
+                </h2>
+				 
+				 <p class="big text-gray-800">Pablo Zitarosa es uno de los referentes de la nueva coctelería nacional. Su primer trabajo fue detrás de la barra de un club a los 14 años y su pasión por el oficio lo llevó desde muy joven a investigar libros, coleccionar cocteleras y hasta a apostarse en la barra del Claridge para observar de cerca a Oscar Chabrés.<br><br>
+				Luego de muchos años de experiencia, hoy se encuentra al frente del consagrado Verne Club  
+				y firme detrás de la barra de su flamante bar Suspiria Resplendoris.</p>
+              </div>
+				 
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>  
+		
+		  <section class="section section-lg bg-default text-center pablo">
+		  
+        <div class="container color2">
+			        <div class="divider-lg"></div>
+          <h2>para todos los gustos</h2>
+  
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-7">
+             <p>Aprendé a realizar los mejores tragos cortos, largos,
+			mocktail y jarras de nuestro maestro.</p>
+            </div>
+          </div>
+			<div class="col-12">
+              <!-- Owl Carousel-->
+              <div class="owl-carousel carousel-creative" data-items="1" data-lg-items="3" data-dots="true" data-nav="false" data-stage-padding="15px" data-loop="false" data-margin="10px" data-mouse-drag="false" padding-left= "10px">
+                <div class="team-minimal team-minimal-with-shadow suscripcion ">
+				
+                  <figure><img src="images/trago1.jpg" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">Bramble</a></h4>
+                    <p>1 1/2 Oz de Gin<br> 1 Oz de Jugo de Limón<br>1/2 Oz de Almibar
+					</p>
+                    <a class="button button-default-outline" href="#suscripcion1" data-caption-animate="fadeInUp" data-caption-delay="450">ver más</a>
+                  </div>
+                </div>
+				 
+                <div class="team-minimal team-minimal-with-shadow suscripcion">
+                  <figure><img src="images/trago2.jpg" alt="" width="370" height="370"></figure>
+                                   <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">French 75</a></h4>
+                    <p>1 Oz de Gin<br> 1/2 Oz de Jugo de Limón<br>1/2 Oz de Almibar
+					</p>
+                    <a class="button button-default-outline" href="#suscripcion1" data-caption-animate="fadeInUp" data-caption-delay="450">ver más</a>
+                  </div>
+                </div>
+                <div class="team-minimal team-minimal-with-shadow suscripcion">
+                  <figure><img src="images/trago3.jpg" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">Lucien Gaudin</a></h4>
+                    <p>1 Oz de Gin<br> 3/4 Oz de Cointreau<br>3/4 Oz de Campari
+					</p>
+                    <a class="button button-default-outline" href="#suscripcion1" data-caption-animate="fadeInUp" data-caption-delay="450">ver más</a>
+                  </div>
+                </div>
+				   <div class="team-minimal team-minimal-with-shadow suscripcion">
+                  <figure><img src="images/trago4.jpg" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">Mai Tai</a></h4>
+                    <p>1 1/2 Oz de Ron Blanco<br> 3/4 Oz de Triple Sec Curaçao<br>3/4 Oz de Jugo de Lima
+					</p>
+                    <a class="button button-default-outline" href="#suscripcion1" data-caption-animate="fadeInUp" data-caption-delay="450">ver más</a>
+                  </div>
+                </div>
+				  				   <div class="team-minimal team-minimal-with-shadow">
+                  <figure><img src="images/trago5.jpg" alt="" width="370" height="370"></figure>
+                  <div class="team-minimal-caption suscripcion color2">
+                    <h4 class="team-title"><a href="#">Cosmopolitan</a></h4>
+                    <p>2 Oz de Vodka de Limón<br> 1 Oz de Cointreau<br>3/4 Oz de Jugo de Lima
+					</p>
+                    <a class="button button-default-outline" href="#suscripcion1" data-caption-animate="fadeInUp" data-caption-delay="450">ver más</a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+			 </div> 
+      </section>
+		
+		
+		
+		
+		
+		
+<section class="section swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-slide-bg="images/slide-1-1920x720.jpg">
+            <div class="swiper-slide-caption section-md">
+        <div class="container text-center">
+          <div class="row justify-content-md-center row-50">
+            <div class="col-lg-8 color1">
+              <h2>UNIte y Eleva tu Paladar</h2>
+              
+              <p class="color3">Conviértete en el anfitrión que todos admiran. <br>Comienza tu viaje hacia la excelencia en la Coctelería.</p>
+              <!-- RD Mailform-->
+              <form class="rd-mailform text-left rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <div class="row row-30">
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-name">Nombre</label>
+                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-sec-name">Apellido</label>
+                      <input class="form-input" id="contact-sec-name" type="text" name="sec-name" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-phone">Tel./Celular</label>
+                      <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-email">E-Mail</label>
+                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-message">Mensaje</label>
+                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-button group-sm text-left">
+                  <button class="button button-primary" type="submit">ENVIAR</button>
+                </div>
+              </form>
+            </div>
+              </div>
+              </div>
+          </div>
+			  </div>
+        </div>
+      </section>
+		
+      
+      <!-- Page Footer-->
+      <footer class="section bg-default section-xs-type-1 footer-minimal">
+        <div class="container">
+          <div class="row row-30 align-items-lg-center justify-content-lg-between">
+            <div class="col-lg-2">
+              <div class="footer-brand"><a href="index.html"><img src="images/LOGO.svg" alt="" width="142" height="58"/></a></div>
+            </div>
+            <div class="col-lg-10">
+              <div class="footer-nav">
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Inicio</a></li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">Suscripciones</a></li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Nosotros</a></li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contactos</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-    <!--Cierra body (contenido)-->
-</body>
-<!--Fin del documento HTML-->
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by houdini-->
+  </body>
 </html>
